@@ -1,0 +1,302 @@
+[~/Direction/qrt2/dl/PA2_starter]
+$ python -i neuralnet.py
+^Kstarting run 1
+kktrain loss:0.23469245087621285, validation loss:0.21860978179435836
+accuracy on valid:21.8
+starting run 2
+train loss:0.21583013704257933, validation loss:0.209870249740448
+accuracy on valid:24.98
+starting run 3
+train loss:0.21102596442925323, validation loss:0.2108203711515991
+accuracy on valid:25.26
+starting run 4
+train loss:0.2074360269099088, validation loss:0.21092817767546193
+accuracy on valid:26.54
+starting run 5
+train loss:0.20558724850384363, validation loss:0.20480650572892242
+accuracy on valid:27.82
+starting run 6
+train loss:0.20330640456830856, validation loss:0.2050044776292719
+accuracy on valid:28.66
+starting run 7
+train loss:0.201247078058331, validation loss:0.20400472245018827
+accuracy on valid:28.08
+starting run 8
+train loss:0.19909395504661007, validation loss:0.20309981483927847
+accuracy on valid:28.48
+starting run 9
+train loss:0.19682923224332627, validation loss:0.20174187574916877
+accuracy on valid:29.12
+starting run 10
+train loss:0.19515283538934988, validation loss:0.20035257768366166
+accuracy on valid:30.0
+starting run 11
+train loss:0.19343304995198202, validation loss:0.19796654530102692
+accuracy on valid:30.68
+starting run 12
+train loss:0.1921209107818447, validation loss:0.19827275356791738
+accuracy on valid:29.88
+starting run 13
+train loss:0.19051715452496434, validation loss:0.19919758945335267
+accuracy on valid:31.0
+starting run 14
+train loss:0.18872791345723952, validation loss:0.19704215788795765
+accuracy on valid:30.84
+starting run 15
+train loss:0.18760664707415953, validation loss:0.19407131618982443
+accuracy on valid:31.94
+starting run 16
+train loss:0.1864145458992617, validation loss:0.19475831749440592
+accuracy on valid:31.8
+starting run 17
+train loss:0.18543178264978138, validation loss:0.19864204616683673
+accuracy on valid:31.6
+starting run 18
+train loss:0.18507283811426056, validation loss:0.1948192356287696
+accuracy on valid:31.66
+starting run 19
+train loss:0.18359574278702268, validation loss:0.19621727544712073
+accuracy on valid:32.04
+starting run 20
+train loss:0.1822418181512988, validation loss:0.1951489462692137
+accuracy on valid:32.78
+starting run 21
+train loss:0.1807987610452217, validation loss:0.19341820120403375
+accuracy on valid:31.58
+starting run 22
+train loss:0.18052852384536824, validation loss:0.19542354225772934
+accuracy on valid:32.24
+starting run 23
+train loss:0.17984677994988402, validation loss:0.19203550121868196
+accuracy on valid:33.78
+starting run 24
+train loss:0.17855559590238376, validation loss:0.19323468323094997
+accuracy on valid:32.98
+starting run 25
+train loss:0.17855639673207926, validation loss:0.19087774257973114
+accuracy on valid:33.3
+starting run 26
+train loss:0.17727717791505412, validation loss:0.19279382227746536
+accuracy on valid:33.42
+starting run 27
+train loss:0.17680044456904154, validation loss:0.19186064625334875
+accuracy on valid:33.36
+starting run 28
+train loss:0.17603177249530874, validation loss:0.1929419459854294
+accuracy on valid:32.74
+starting run 29
+train loss:0.1753684208989157, validation loss:0.19241153393274624
+accuracy on valid:33.16
+starting run 30
+train loss:0.17459551203331752, validation loss:0.1954481520135959
+accuracy on valid:33.16
+starting run 31
+train loss:0.17374585785080976, validation loss:0.1929283644624079
+accuracy on valid:34.38
+starting run 32
+train loss:0.17277421689304484, validation loss:0.19365533722462905
+accuracy on valid:33.36
+starting run 33
+train loss:0.17192334993899178, validation loss:0.1907144787595654
+accuracy on valid:34.84
+starting run 34
+train loss:0.17086777494721164, validation loss:0.1968466847590277
+accuracy on valid:31.68
+starting run 35
+train loss:0.17019840423531918, validation loss:0.191763986176811
+accuracy on valid:34.28
+starting run 36
+train loss:0.17034184017706008, validation loss:0.1975672361964533
+accuracy on valid:32.26
+starting run 37
+train loss:0.16945382718892968, validation loss:0.193994045417788
+accuracy on valid:34.02
+starting run 38
+train loss:0.16798359243631053, validation loss:0.19293642785760806
+accuracy on valid:34.04
+starting run 39
+train loss:0.16821909804736931, validation loss:0.19185160997545195
+accuracy on valid:34.62
+starting run 40
+train loss:0.16851294808608566, validation loss:0.19077217785063091
+accuracy on valid:34.76
+starting run 41
+train loss:0.1676242150960687, validation loss:0.19291538571538597
+accuracy on valid:34.14
+starting run 42
+train loss:0.16648989719663715, validation loss:0.1937106111302619
+accuracy on valid:33.8
+starting run 43
+train loss:0.16621648543551593, validation loss:0.19500539912599846
+accuracy on valid:33.56
+starting run 44
+train loss:0.16587159006921512, validation loss:0.19324312785843945
+accuracy on valid:34.42
+starting run 45
+train loss:0.1648651736110414, validation loss:0.19468915805044376
+accuracy on valid:33.86
+starting run 46
+train loss:0.1634441330355759, validation loss:0.19372807021849484
+accuracy on valid:33.54
+starting run 47
+train loss:0.16390294798127397, validation loss:0.18986695540189827
+accuracy on valid:35.74
+starting run 48
+train loss:0.1631338644171347, validation loss:0.1902957446770706
+accuracy on valid:35.78
+starting run 49
+train loss:0.1621113451874771, validation loss:0.19244123880326136
+accuracy on valid:33.98
+starting run 50
+train loss:0.16272550918708428, validation loss:0.19309675818735617
+accuracy on valid:34.28
+starting run 51
+train loss:0.16174050862462613, validation loss:0.19376476153210387
+accuracy on valid:34.2
+starting run 52
+train loss:0.16115755283143093, validation loss:0.19101221856834102
+accuracy on valid:35.4
+starting run 53
+train loss:0.16036322322238805, validation loss:0.19254358486689788
+accuracy on valid:35.08
+starting run 54
+train loss:0.16013005636941854, validation loss:0.19332793418596725
+accuracy on valid:34.6
+starting run 55
+train loss:0.15979960397638523, validation loss:0.1929020392130908
+accuracy on valid:34.58
+starting run 56
+train loss:0.1588574454161982, validation loss:0.19317403682958217
+accuracy on valid:35.0
+starting run 57
+train loss:0.15883549772239353, validation loss:0.1978347923211309
+accuracy on valid:33.76
+starting run 58
+train loss:0.1577619769206184, validation loss:0.19786376076906292
+accuracy on valid:34.2
+starting run 59
+train loss:0.15773322377941507, validation loss:0.19308644695095237
+accuracy on valid:34.96
+starting run 60
+train loss:0.15697925326578094, validation loss:0.1948507965054814
+accuracy on valid:35.4
+starting run 61
+train loss:0.1565797667077327, validation loss:0.1952264882644127
+accuracy on valid:35.26
+starting run 62
+train loss:0.15630395965157518, validation loss:0.19475506472649118
+accuracy on valid:34.74
+starting run 63
+train loss:0.15638854221978607, validation loss:0.19108566756112927
+accuracy on valid:35.2
+starting run 64
+train loss:0.15565545126137362, validation loss:0.1942201092709813
+accuracy on valid:35.1
+starting run 65
+train loss:0.15540525512156228, validation loss:0.1952619216824505
+accuracy on valid:35.48
+starting run 66
+train loss:0.15413315731493757, validation loss:0.19483543930754746
+accuracy on valid:34.46
+starting run 67
+train loss:0.15501455402410852, validation loss:0.19465728139402375
+accuracy on valid:34.82
+starting run 68
+train loss:0.1543680154693327, validation loss:0.1957452665805707
+accuracy on valid:34.36
+starting run 69
+train loss:0.15346180524850747, validation loss:0.19477636700967857
+accuracy on valid:34.8
+starting run 70
+train loss:0.15292675744514733, validation loss:0.1949221914948766
+accuracy on valid:34.34
+starting run 71
+train loss:0.15297601059360025, validation loss:0.1963674950930868
+accuracy on valid:34.98
+starting run 72
+train loss:0.151830911455994, validation loss:0.19402601695248362
+accuracy on valid:36.24
+starting run 73
+train loss:0.15196062310048075, validation loss:0.1914623778978112
+accuracy on valid:35.68
+starting run 74
+train loss:0.15166288953318977, validation loss:0.19446814228732584
+accuracy on valid:35.3
+starting run 75
+train loss:0.15133561309891042, validation loss:0.19482823425151527
+accuracy on valid:35.08
+starting run 76
+train loss:0.15118344021050667, validation loss:0.19488635953273906
+accuracy on valid:35.74
+starting run 77
+train loss:0.15007493381411016, validation loss:0.19657295705547242
+accuracy on valid:34.42
+starting run 78
+train loss:0.1499188328342674, validation loss:0.19648779706391745
+accuracy on valid:35.58
+starting run 79
+train loss:0.15013602600255815, validation loss:0.1980418348579246
+accuracy on valid:34.68
+starting run 80
+train loss:0.149753385029653, validation loss:0.19703218875280076
+accuracy on valid:35.78
+starting run 81
+train loss:0.14972636118605614, validation loss:0.19781965993181483
+accuracy on valid:34.3
+starting run 82
+train loss:0.1491584634628808, validation loss:0.19593380933911755
+accuracy on valid:34.6
+starting run 83
+train loss:0.14892231203605696, validation loss:0.1976027423483374
+accuracy on valid:34.64
+starting run 84
+train loss:0.14892697607144706, validation loss:0.1990402076801162
+accuracy on valid:34.6
+starting run 85
+train loss:0.1475205070124676, validation loss:0.19816808415467885
+accuracy on valid:35.8
+starting run 86
+train loss:0.14746544328692401, validation loss:0.19714866347394025
+accuracy on valid:35.38
+starting run 87
+train loss:0.14676326694874828, validation loss:0.19667414845112086
+accuracy on valid:35.74
+starting run 88
+train loss:0.14695423790291276, validation loss:0.19756311869347173
+accuracy on valid:36.64
+starting run 89
+train loss:0.14675128190480122, validation loss:0.19819789880492142
+accuracy on valid:35.86
+starting run 90
+train loss:0.1473587210487009, validation loss:0.1967574606584456
+accuracy on valid:36.1
+starting run 91
+train loss:0.14582988638577762, validation loss:0.19892681527973857
+accuracy on valid:35.82
+starting run 92
+train loss:0.14581968405449033, validation loss:0.19947655758022498
+accuracy on valid:35.78
+starting run 93
+train loss:0.14586230782845527, validation loss:0.1971288768653536
+accuracy on valid:35.22
+starting run 94
+train loss:0.14486971679652907, validation loss:0.1982653291761424
+accuracy on valid:34.8
+starting run 95
+train loss:0.14600266445731913, validation loss:0.19879882042282254
+accuracy on valid:35.28
+starting run 96
+train loss:0.1449315021270951, validation loss:0.19588209873557536
+accuracy on valid:36.12
+starting run 97
+train loss:0.14433618335452847, validation loss:0.1975088046228894
+accuracy on valid:35.98
+starting run 98
+train loss:0.144181019834964, validation loss:0.19466134513982034
+accuracy on valid:36.2
+starting run 99
+train loss:0.1438593192263382, validation loss:0.1955683263070636
+accuracy on valid:35.94
+starting run 100
+train loss:0.14354720351660924, validation loss:0.2003956165455651
+accuracy on valid:34.8
