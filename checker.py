@@ -125,7 +125,6 @@ def sanity_network(data, default_config):
         if isinstance(layer, neuralnet.Layer):
             layer_no += 1
             error_x   = np.sum(np.abs(data['nnet'].layers[layer_idx].x   - layer.x))
-            pdb.set_trace()
             error_w   = np.sum(np.abs(data['nnet'].layers[layer_idx].w   - layer.w))
             error_b   = np.sum(np.abs(data['nnet'].layers[layer_idx].b   - layer.b))
             error_d_w = np.sum(np.abs(data['nnet'].layers[layer_idx].d_w - layer.d_w))

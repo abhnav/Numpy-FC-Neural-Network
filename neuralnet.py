@@ -279,15 +279,15 @@ class Layer():
         Return self.dx
         """
         self.d_x = delta.dot(self.w.T)
-        self.d_b = delta # bias coefficient is always 1
-        self.d_w = np.einsum("ni,nj->nij", self.x, delta) # N x in_dim x out_dim matrix
+        self.d_b = delta.sum(axis=0)[np.newaxis,:] # bias coefficient is always 1
+        self.d_w = np.einsum("ni,nj->ij", self.x, delta) # N x in_dim x out_dim matrix
         return self.d_x
 
     def update_weights(self, lr):
-      db = self.d_b.sum(axis=0)[np.newaxis, :] # sum over the samples
-      dw = self.d_w.sum(axis=0)
-      self.b = self.b + lr*db
-      self.w = self.w + lr*dw
+      # db = self.d_b.sum(axis=0)[np.newaxis, :] # sum over the samples
+      # dw = self.d_w.sum(axis=0)
+      self.b = self.b + lr*self.d_b
+      self.w = self.w + lr*self.d_w
 
 class PCA():
   def __init__(self,com):
