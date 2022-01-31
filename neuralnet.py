@@ -245,9 +245,10 @@ class Layer():
         """
         Define the architecture and create placeholder.
         """
-        # TODO: better way to init weights?
-        self.w = np.random.rand(in_units, out_units)   # Declare the Weight matrix
-        self.b = np.random.rand(1,out_units)    # Create a placeholder for Bias, row vector
+        np.random.seed(42)
+        # using rand seems to give better results
+        self.w = np.random.randn(in_units, out_units)   # Declare the Weight matrix
+        self.b = np.random.randn(1,out_units)    # Create a placeholder for Bias, row vector
         self.x = None    # Save the input to forward in this
         self.a = None    # Save the output of forward pass in this (without activation)
 
@@ -280,26 +281,12 @@ class Layer():
         """
         self.d_x = delta.dot(self.w.T)
         self.d_b = delta.sum(axis=0)[np.newaxis,:] # bias coefficient is always 1
-        self.d_w = np.einsum("ni,nj->ij", self.x, delta) # N x in_dim x out_dim matrix
+        self.d_w = np.einsum("ni,nj->ij", self.x, delta) # in_dim x out_dim matrix
         return self.d_x
 
     def update_weights(self, lr):
-      # db = self.d_b.sum(axis=0)[np.newaxis, :] # sum over the samples
-      # dw = self.d_w.sum(axis=0)
-      self.b = self.b + lr*self.d_b
-      self.w = self.w + lr*self.d_w
-
-class PCA():
-  def __init__(self,com):
-    self.nc = com
-
-  def fit(self,X):
-    v,s,vt = np.linalg.svd(X.T.dot(X))
-    self.pc = vt[:self.nc,:]
-    self.var = s[:self.nc]
-
-  def transform(self, X):
-    return X.dot(self.pc.T)
+      self.b = self.b - lr*self.d_b
+      self.w = self.w - lr*self.d_w
 
 class Neuralnetwork():
     """
@@ -366,7 +353,10 @@ class Neuralnetwork():
         TODO: Implement backpropagation here.
         Call backward methods of individual layers.
         '''
-        delta = - (self.y - self.targets)
+        # Dividing by number of targets reduces the gradient magnitude,
+        # making it harder to learn.
+        # Momentum is required to get better results. Until then don't divide
+        delta = (self.y - self.targets) #/ self.targets.shape[0]
         for la in reversed(self.layers):
           delta = la.backward(delta)
 
@@ -447,12 +437,6 @@ if __name__ == "__main__":
     x_val, y_val = x_train[order[:N_val]], y_train[order[:N_val]]
     x_t, y_t = x_train[order[N_val:]], y_train[order[N_val:]]
 
-    # pca = PCA(1000)
-    # pca.fit(x_t)
-    # x_t = pca.transform(x_t)
-    # x_val = pca.transform(x_val)
-
-    # # TODO: train the model
     l_t,l_v = train(model, x_t, y_t, x_val, y_val, config)
 
     fig = plt.figure(figsize=(10,6))

@@ -16,7 +16,6 @@ import neuralnet
 import numpy as np
 import yaml
 import pickle
-import pdb
 
 
 def get_data(path):
