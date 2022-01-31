@@ -10,6 +10,7 @@
 ################################################################################
 
 import os, gzip
+import time
 import yaml
 import numpy as np
 import pickle
@@ -395,6 +396,7 @@ def train(model, x_train, y_train, x_valid, y_valid, config):
     netloss_t = []
     netloss_v = []
     for ep in np.arange(epochs):
+      bb = time.time()
       loss_t = 0
       print(f"starting run {ep+1}")
       for x_t,y_t in dataloader(x_train, y_train, batchsize):
@@ -412,6 +414,7 @@ def train(model, x_train, y_train, x_valid, y_valid, config):
       print(f"train loss:{loss_t}, validation loss:{loss_v}")
       acc = test(model, x_valid, y_valid)
       print(f"val accuracy:{acc}")
+      print(f"took time {time.time() - bb}")
     return netloss_t, netloss_v
 
 def test(model, X_test, y_test):
