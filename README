@@ -1,10 +1,3 @@
-Starter code for PA2. Make sure to add the data/ folder containing the images.
-regularization, momentum, patience still needs to be added.
-
-example_run.txt has a sample run of the network that took around 2 hours.
-
-The checker.py needs [784, 50, 50, 10] config in the yaml to pass the code.
-
-If you run the checker.py with above, it would still fail on weights, bias,etc
-because of random initialization which can't possibly be matched with what they are comparing with.
+A simple Neural Network with Cross Entropy loss implemented in Numpy.
+Complete with forward pass, backpropagation, gradient descent and activation functions.
 
